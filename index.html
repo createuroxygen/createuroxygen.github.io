@@ -19,12 +19,24 @@
   <meta name="twitter:description" content="OXY-GEN est un éditeur indépendant d'applications mobiles pour Android et iOS.">
   
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="application-name" content="OXY-GEN">
+  <meta name="apple-mobile-web-app-title" content="OXY-GEN">
+  <meta name="theme-color" content="#0B0F14">
 </head>
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo">OXY-GEN</a>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;">OXY-GEN</span>
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav>
         <ul>
@@ -39,25 +51,80 @@
 
   <main>
     <section class="hero">
-      <h1>OXY-GEN</h1>
-      <p>Éditeur indépendant d'applications mobiles pour Android et iOS</p>
+      <div class="hero-logo reveal">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none';">
+      </div>
+      <h1 class="glitch reveal" data-text="OXY-GEN">OXY-GEN</h1>
+      <p class="reveal">Éditeur indépendant d'applications mobiles pour Android et iOS</p>
+      <div class="hero-cta reveal">
+        <a href="apps.html" class="btn">Découvrir nos Apps</a>
+        <a href="support.html" class="btn btn-secondary">Support</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Qui sommes-nous ?</h2>
-      <p>OXY-GEN est un éditeur indépendant spécialisé dans le développement d'applications mobiles. Nous concevons et publions des applications de qualité pour les plateformes Android et iOS.</p>
-      <p>Notre approche privilégie la qualité technique, le respect de la confidentialité des utilisateurs et un support réactif.</p>
+    <section class="reveal">
+      <h2>Ce que nous construisons</h2>
+      <div class="cards-grid">
+        <div class="card card-tilt reveal">
+          <h3>Applications mobiles</h3>
+          <p>Nous développons des applications natives pour Android et iOS, optimisées pour chaque plateforme.</p>
+          <p><strong>Technologies :</strong> Kotlin, Swift, React Native</p>
+        </div>
+
+        <div class="card card-tilt reveal">
+          <h3>Expérience utilisateur</h3>
+          <p>Chaque application est conçue avec une attention particulière à l'ergonomie et à l'expérience utilisateur.</p>
+          <p><strong>Focus :</strong> Design intuitif, performance, accessibilité</p>
+        </div>
+
+        <div class="card card-tilt reveal">
+          <h3>Confidentialité</h3>
+          <p>Le respect de la vie privée est au cœur de nos développements. Données minimales, transparence maximale.</p>
+          <p><strong>Engagement :</strong> RGPD, transparence, contrôle utilisateur</p>
+        </div>
+
+        <div class="card card-tilt reveal">
+          <h3>Support réactif</h3>
+          <p>Nous accompagnons nos utilisateurs avec un support réactif et efficace pour toute question ou problème.</p>
+          <p><strong>Délai :</strong> 2 à 5 jours ouvrés</p>
+        </div>
+
+        <div class="card card-tilt reveal">
+          <h3>Innovation continue</h3>
+          <p>Nos applications évoluent régulièrement avec de nouvelles fonctionnalités et améliorations basées sur vos retours.</p>
+          <p><strong>Approche :</strong> Mises à jour régulières, améliorations continues</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Nos applications</h2>
-      <p>Nous développons et publions des applications mobiles variées. Consultez notre <a href="apps.html">liste d'applications</a> pour découvrir nos réalisations.</p>
-      <p>Pour toute question ou demande de support, n'hésitez pas à nous <a href="support.html">contacter</a>.</p>
+    <section class="reveal">
+      <h2>Notre confiance</h2>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <h3>Qualité</h3>
+          <p>Chaque application est développée avec rigueur, testée exhaustivement et maintenue régulièrement pour garantir une expérience optimale.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Processus</h3>
+          <p>Notre processus de développement suit les meilleures pratiques de l'industrie : architecture solide, tests automatisés, code review.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Confidentialité</h3>
+          <p>Nous collectons uniquement les données strictement nécessaires et les traitons de manière transparente. Consultez notre <a href="privacy-policy.html">politique de confidentialité</a>.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Support</h3>
+          <p>Notre équipe s'engage à fournir un support réactif. Toute question ou problème est pris au sérieux et traité dans les meilleurs délais.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>Contact</h2>
-      <div class="contact-info">
+      <div class="contact-info reveal">
         <p><strong>Email :</strong> <a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a></p>
         <p>Pour toute demande de support, consultez notre <a href="support.html">page de support</a>.</p>
       </div>

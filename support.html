@@ -19,12 +19,24 @@
   <meta name="twitter:description" content="Obtenez de l'aide pour les applications OXY-GEN. Contactez-nous par email.">
   
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="application-name" content="OXY-GEN">
+  <meta name="apple-mobile-web-app-title" content="OXY-GEN">
+  <meta name="theme-color" content="#0B0F14">
 </head>
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo">OXY-GEN</a>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;">OXY-GEN</span>
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav>
         <ul>
@@ -38,20 +50,43 @@
   </header>
 
   <main>
-    <section>
+    <section class="reveal">
       <h1>Support</h1>
       <p>Nous sommes là pour vous aider. Pour toute question, problème technique ou demande d'assistance concernant nos applications, contactez-nous.</p>
     </section>
 
-    <section>
+    <section class="reveal">
+      <h2>Support SLA</h2>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <h3>Délai de réponse</h3>
+          <p><strong>2 à 5 jours ouvrés</strong></p>
+          <p>Nous nous engageons à répondre à toutes les demandes dans ce délai. Les demandes urgentes sont traitées en priorité.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Canaux de contact</h3>
+          <p><strong>Email uniquement</strong></p>
+          <p><a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a></p>
+          <p>Toutes les demandes passent par email pour un suivi optimal.</p>
+        </div>
+
+        <div class="card reveal">
+          <h3>Informations requises</h3>
+          <p>Pour un traitement rapide, incluez : nom de l'app, version, OS, description détaillée, captures d'écran si nécessaire.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
       <h2>Comment nous contacter</h2>
-      <div class="contact-info">
+      <div class="contact-info reveal">
         <p><strong>Email :</strong> <a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a></p>
         <p><strong>Délai de réponse indicatif :</strong> 2 à 5 jours ouvrés</p>
       </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>Informations à fournir</h2>
       <p>Pour un traitement plus rapide de votre demande, merci de nous communiquer :</p>
       <ul>
@@ -63,27 +98,35 @@
       </ul>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>FAQ</h2>
       
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <h3>Comment signaler un bug ?</h3>
-        <p>Envoyez-nous un email à <a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a> en incluant les informations listées ci-dessus. Nous examinerons votre signalement et vous répondrons dans les meilleurs délais.</p>
+        <div class="faq-content">
+          <p>Envoyez-nous un email à <a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a> en incluant les informations listées ci-dessus. Nous examinerons votre signalement et vous répondrons dans les meilleurs délais.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <h3>Puis-je suggérer une nouvelle fonctionnalité ?</h3>
-        <p>Oui, nous sommes toujours ouverts aux suggestions. Contactez-nous par email avec votre idée et nous l'étudierons.</p>
+        <div class="faq-content">
+          <p>Oui, nous sommes toujours ouverts aux suggestions. Contactez-nous par email avec votre idée et nous l'étudierons.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <h3>Comment obtenir des informations sur une application spécifique ?</h3>
-        <p>Consultez notre <a href="apps.html">page Applications</a> ou contactez-nous directement par email pour toute question détaillée.</p>
+        <div class="faq-content">
+          <p>Consultez notre <a href="apps.html">page Applications</a> ou contactez-nous directement par email pour toute question détaillée.</p>
+        </div>
       </div>
 
-      <div class="faq-item">
+      <div class="faq-item reveal">
         <h3>Quels sont vos délais de réponse ?</h3>
-        <p>Nous nous efforçons de répondre à toutes les demandes dans un délai de 2 à 5 jours ouvrés. Les demandes complexes peuvent nécessiter plus de temps.</p>
+        <div class="faq-content">
+          <p>Nous nous efforçons de répondre à toutes les demandes dans un délai de 2 à 5 jours ouvrés. Les demandes complexes peuvent nécessiter plus de temps.</p>
+        </div>
       </div>
     </section>
   </main>

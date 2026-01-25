@@ -19,12 +19,24 @@
   <meta name="twitter:description" content="Politique de confidentialité d'OXY-GEN concernant la collecte et le traitement des données personnelles.">
   
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="application-name" content="OXY-GEN">
+  <meta name="apple-mobile-web-app-title" content="OXY-GEN">
+  <meta name="theme-color" content="#0B0F14">
 </head>
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo">OXY-GEN</a>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;">OXY-GEN</span>
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav>
         <ul>
@@ -38,7 +50,7 @@
   </header>
 
   <main>
-    <section>
+    <section class="reveal">
       <h1>Politique de confidentialité</h1>
       <p><strong>Dernière mise à jour :</strong> Janvier 2026</p>
       <p>OXY-GEN s'engage à protéger la vie privée des utilisateurs de ses applications mobiles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles.</p>

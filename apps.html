@@ -19,12 +19,24 @@
   <meta name="twitter:description" content="Découvrez les applications mobiles développées et publiées par OXY-GEN.">
   
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="application-name" content="OXY-GEN">
+  <meta name="apple-mobile-web-app-title" content="OXY-GEN">
+  <meta name="theme-color" content="#0B0F14">
 </head>
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo">OXY-GEN</a>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;">OXY-GEN</span>
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav>
         <ul>
@@ -38,34 +50,40 @@
   </header>
 
   <main>
-    <section>
+    <section class="reveal">
       <h1>Applications</h1>
       <p>OXY-GEN développe et publie des applications mobiles pour Android et iOS. Voici une sélection de nos applications :</p>
     </section>
 
-    <section>
+    <section class="reveal">
       <div class="cards-grid">
-        <div class="card">
+        <div class="card card-tilt reveal">
+          <span class="card-badge">Publiée</span>
           <h3>Application 1</h3>
-          <p>Description de l'application. Fonctionnalités principales et objectifs.</p>
+          <p>Description de l'application. Fonctionnalités principales et objectifs. Cette application offre une expérience utilisateur optimale.</p>
           <p><strong>Plateformes :</strong> Android, iOS</p>
+          <a href="#" class="btn" style="margin-top: 1rem;">Voir</a>
         </div>
 
-        <div class="card">
+        <div class="card card-tilt reveal">
+          <span class="card-badge">En développement</span>
           <h3>Application 2</h3>
-          <p>Description de l'application. Fonctionnalités principales et objectifs.</p>
+          <p>Description de l'application. Fonctionnalités principales et objectifs. Cette application sera bientôt disponible.</p>
           <p><strong>Plateformes :</strong> Android, iOS</p>
+          <a href="#" class="btn btn-secondary" style="margin-top: 1rem;">En savoir plus</a>
         </div>
 
-        <div class="card">
+        <div class="card card-tilt reveal">
+          <span class="card-badge">Publiée</span>
           <h3>Application 3</h3>
-          <p>Description de l'application. Fonctionnalités principales et objectifs.</p>
+          <p>Description de l'application. Fonctionnalités principales et objectifs. Cette application est disponible sur les stores.</p>
           <p><strong>Plateformes :</strong> Android, iOS</p>
+          <a href="#" class="btn" style="margin-top: 1rem;">Voir</a>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="reveal">
       <p><em>Cette liste n'est pas exhaustive. Pour obtenir des informations sur une application spécifique ou pour toute question, consultez notre <a href="support.html">page de support</a>.</em></p>
     </section>
   </main>

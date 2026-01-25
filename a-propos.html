@@ -19,12 +19,24 @@
   <meta name="twitter:description" content="Découvrez OXY-GEN, éditeur indépendant d'applications mobiles.">
   
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="application-name" content="OXY-GEN">
+  <meta name="apple-mobile-web-app-title" content="OXY-GEN">
+  <meta name="theme-color" content="#0B0F14">
 </head>
 <body>
   <header>
     <div class="header-container">
-      <a href="index.html" class="logo">OXY-GEN</a>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-oxy-gen.png" alt="OXY-GEN" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;">OXY-GEN</span>
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
       <nav>
         <ul>
@@ -38,33 +50,60 @@
   </header>
 
   <main>
-    <section>
+    <section class="reveal">
       <h1>À propos</h1>
       <p>OXY-GEN est un éditeur indépendant d'applications mobiles pour les plateformes Android et iOS.</p>
     </section>
 
-    <section>
+    <section class="reveal">
       <h2>Notre mission</h2>
       <p>Nous développons et publions des applications mobiles de qualité, en privilégiant l'expérience utilisateur, la fiabilité technique et le respect de la vie privée.</p>
       <p>Notre objectif est de proposer des solutions utiles et bien conçues, sans compromis sur la qualité ou l'éthique.</p>
     </section>
 
-    <section>
-      <h2>Nos principes</h2>
-      
-      <h3>Qualité</h3>
-      <p>Chaque application est développée avec attention aux détails, testée rigoureusement et maintenue régulièrement pour garantir une expérience optimale.</p>
+    <section class="reveal">
+      <h2>Notre parcours</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <h3>Fondation</h3>
+          <p>OXY-GEN est né de la volonté de créer des applications mobiles de qualité, centrées sur l'utilisateur et respectueuses de la vie privée.</p>
+        </div>
 
-      <h3>Confidentialité</h3>
-      <p>Le respect de la vie privée des utilisateurs est une priorité. Nous collectons uniquement les données strictement nécessaires et les traitons de manière transparente. Consultez notre <a href="privacy-policy.html">politique de confidentialité</a> pour plus d'informations.</p>
+        <div class="timeline-item reveal">
+          <h3>Développement</h3>
+          <p>Nous développons des applications pour Android et iOS en suivant les meilleures pratiques de l'industrie et en privilégiant la qualité technique.</p>
+        </div>
 
-      <h3>Support</h3>
-      <p>Nous nous engageons à fournir un support réactif et efficace. Toute question ou problème est pris au sérieux et traité dans les meilleurs délais.</p>
+        <div class="timeline-item reveal">
+          <h3>Engagement</h3>
+          <p>Notre engagement se traduit par un support réactif, des mises à jour régulières et une transparence totale sur nos pratiques de développement.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="reveal">
+      <h2>Nos principes</h2>
+      <div class="cards-grid">
+        <div class="card reveal neon-border">
+          <h3>Qualité</h3>
+          <p>Chaque application est développée avec attention aux détails, testée rigoureusement et maintenue régulièrement pour garantir une expérience optimale.</p>
+        </div>
+
+        <div class="card reveal neon-border">
+          <h3>Confidentialité</h3>
+          <p>Le respect de la vie privée des utilisateurs est une priorité. Nous collectons uniquement les données strictement nécessaires et les traitons de manière transparente. Consultez notre <a href="privacy-policy.html">politique de confidentialité</a> pour plus d'informations.</p>
+        </div>
+
+        <div class="card reveal neon-border">
+          <h3>Support</h3>
+          <p>Nous nous engageons à fournir un support réactif et efficace. Toute question ou problème est pris au sérieux et traité dans les meilleurs délais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
       <h2>Contact</h2>
-      <div class="contact-info">
+      <div class="contact-info reveal">
         <p><strong>Email :</strong> <a href="mailto:createur.oxygen@gmail.com">createur.oxygen@gmail.com</a></p>
         <p>Pour toute question, consultez notre <a href="support.html">page de support</a>.</p>
       </div>
