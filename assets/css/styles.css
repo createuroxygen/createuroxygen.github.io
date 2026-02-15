@@ -235,6 +235,14 @@ nav a.active::before {
   width: 80%;
 }
 
+nav .nav-inactive {
+  color: var(--muted);
+  opacity: 0.6;
+  cursor: not-allowed;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
 /* Menu mobile */
 .menu-toggle {
   display: none;
@@ -545,6 +553,18 @@ section h3 {
   background: var(--blue);
   color: var(--bg);
   box-shadow: 0 0 40px var(--blue-glow);
+}
+
+.btn-inactive {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  animation: none;
+}
+
+.btn-inactive:hover {
+  transform: none;
+  box-shadow: 0 0 20px var(--blue-glow);
 }
 
 /* Links */
